@@ -49,10 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commons\Repository.cs" />
+    <Compile Include="Contexts\ProyectContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contexts\" />
     <Folder Include="Mapping\" />
   </ItemGroup>
   <ItemGroup>

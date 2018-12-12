@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6- Test", "6- Test", "{9C14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoParts.Test", "AutoParts.Test\AutoParts.Test.csproj", "{3E36FB24-2FCC-4CC7-A95A-2293CC99D643}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoParts.WebServices", "AutoParts.WebServices\AutoParts.WebServices.csproj", "{896531FE-CA36-46B2-9E53-59C9277FAA2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{3E36FB24-2FCC-4CC7-A95A-2293CC99D643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E36FB24-2FCC-4CC7-A95A-2293CC99D643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E36FB24-2FCC-4CC7-A95A-2293CC99D643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896531FE-CA36-46B2-9E53-59C9277FAA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896531FE-CA36-46B2-9E53-59C9277FAA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896531FE-CA36-46B2-9E53-59C9277FAA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896531FE-CA36-46B2-9E53-59C9277FAA2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +60,7 @@ Global
 		{E30DDDA7-FDA5-4AB4-99A4-956A8323AC63} = {4B5C3B5C-7496-4006-82A0-64D84B5F50CC}
 		{1D48E12B-400F-4343-BE75-85185354323B} = {E708DB0D-DC59-4B09-A519-C39E05C0FCC7}
 		{3E36FB24-2FCC-4CC7-A95A-2293CC99D643} = {9C14C01E-60D5-4858-9637-E18A5C6366CF}
+		{896531FE-CA36-46B2-9E53-59C9277FAA2A} = {D0E51BF4-C60B-4C8A-AA56-3AE9B460997F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ACA2201F-0C03-42E0-865C-25617DFD36E4}
