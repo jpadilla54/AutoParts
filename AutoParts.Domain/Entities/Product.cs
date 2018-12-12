@@ -22,5 +22,10 @@ namespace AutoParts.Domain.Entities
             Price = price;
             Quantity = 0;
         }
+
+        public void AddToInventory(int quantity)
+        {
+            Quantity += quantity;
+        }
     }
 }

@@ -27,9 +27,8 @@ namespace AutoParts.Test
         public void ShouldAddProductToInventary()
         {
             Product product = new Product(1, "Tornillo", 0.5, 1.5);
-            Inventary inventary = new Inventary();
-
-            Assert.AreEqual(0, product.Quantity);
+            product.AddToInventory(1);
+            Assert.AreEqual(1, product.Quantity);
         }
 
     }
