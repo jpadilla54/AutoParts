@@ -30,6 +30,14 @@ namespace AutoParts.Test
             product.AddToInventory(1);
             Assert.AreEqual(1, product.Quantity);
         }
+        [TestMethod]
+        public void ShouldRemoveProductFromInventary()
+        {
+            Product product = new Product(1, "Tornillo", 0.5, 1.5);
+            product.AddToInventory(5);
+            product.RemoveFromInventory(1);
+            Assert.AreEqual(4, product.Quantity);
+        }
 
     }
 }
