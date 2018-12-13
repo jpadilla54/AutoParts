@@ -47,7 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repository\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutoParts.Domain\AutoParts.Domain.csproj">
+      <Project>{0f4d79c6-6ada-4cd0-a7e2-6584a0a14794}</Project>
+      <Name>AutoParts.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoParts.Infrastructure\AutoParts.Infrastructure.csproj">
+      <Project>{e30ddda7-fda5-4ab4-99a4-956a8323ac63}</Project>
+      <Name>AutoParts.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutoParts.Test\AutoParts.Test.csproj">
+      <Project>{3e36fb24-2fcc-4cc7-a95a-2293cc99d643}</Project>
+      <Name>AutoParts.Test</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

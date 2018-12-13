@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Runtime.Remoting.Contexts;
 using System.Web;
 using System.Web.Mvc;
 using AutoParts.Aplication.Dtos;
@@ -12,6 +13,7 @@ using AutoParts.Domain.Commons;
 using AutoParts.Domain.Entities;
 using AutoParts.Infrastructure.Commons;
 using AutoParts.Infrastructure.Contexts;
+using Microsoft.Ajax.Utilities;
 
 namespace AutoParts.WebServices.Controllers
 {
@@ -54,22 +56,24 @@ namespace AutoParts.WebServices.Controllers
             return View();
         }
 
-        //    // POST: Products/Create
-        //    // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        //    // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        //    [HttpPost]
-        //    [ValidateAntiForgeryToken]
-        //    public ActionResult Create([Bind(Include = "Id,Name,Cost,Price,Quantity")] ProductDto productDto)
-        //    {
-        //        if (ModelState.IsValid)
-        //        {
-        //            ProyectContext.products.Add(productDto);
-        //            db.SaveChanges();
-        //            return RedirectToAction("Index");
-        //        }
+          // POST: Products/Create
+         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+            [HttpPost]
+            [ValidateAntiForgeryToken]
+            public ActionResult Create([Bind(Include = "Id,Name,Cost,Price,Quantity")] ProductDto productDto)
+            {
+                if (ModelState.IsValid)
+                {
 
-        //        return View(productDto);
-        //    }
+                _productAppService.CreateProduct(productDto);
+                    // ProyectContext.products.Add(products);
+                   //db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+                return View(productDto);
+            }
 
         //    // GET: Products/Edit/5
         //    public ActionResult Edit(int? id)
