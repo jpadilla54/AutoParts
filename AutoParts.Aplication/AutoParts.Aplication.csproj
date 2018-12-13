@@ -47,12 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repository\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AutoParts.Domain\AutoParts.Domain.csproj">
-      <Project>{0f4d79c6-6ada-4cd0-a7e2-6584a0a14794}</Project>
-      <Name>AutoParts.Domain</Name>
-    </ProjectReference>
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
