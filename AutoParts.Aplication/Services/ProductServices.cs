@@ -35,18 +35,25 @@ namespace AutoParts.Aplication.Services
             _products.Save();
 
         }
+        public void DeleteProduct(ProductDto productDto)
+        {
+            _products.Delete(new Product(productDto.Id, productDto.Name, productDto.Cost, productDto.Price));
+            _products.Save();
+        }
 
         public IEnumerable<ProductDto> GetProducts()
         {
             var products = _products.GetAll();
             foreach (var product in products)
             {
-                yield return new ProductDto() {
+                yield return new ProductDto()
+                {
                     Id = product.Id,
                     Cost = product.Cost,
                     Price = product.Price,
                     Name = product.Name,
-                    Quantity = product.Quantity };
+                    Quantity = product.Quantity
+                };
             }
         }
     }

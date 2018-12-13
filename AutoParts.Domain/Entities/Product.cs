@@ -29,6 +29,11 @@ namespace AutoParts.Domain.Entities
             Quantity += quantity;
         }
 
+        public void DeleteFromProducts(int id)
+        {
+
+        }
+
         public void RemoveFromInventory(int quantity)
         {
             if (Quantity <= 0)

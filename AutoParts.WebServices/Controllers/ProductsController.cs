@@ -57,8 +57,6 @@ namespace AutoParts.WebServices.Controllers
         }
 
           // POST: Products/Create
-         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
             [HttpPost]
             [ValidateAntiForgeryToken]
             public ActionResult Create([Bind(Include = "Id,Name,Cost,Price,Quantity")] ProductDto productDto)
@@ -67,8 +65,6 @@ namespace AutoParts.WebServices.Controllers
                 {
 
                 _productAppService.CreateProduct(productDto);
-                    // ProyectContext.products.Add(products);
-                   //db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
