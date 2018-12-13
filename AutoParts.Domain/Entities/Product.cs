@@ -31,7 +31,14 @@ namespace AutoParts.Domain.Entities
 
         public void RemoveFromInventory(int quantity)
         {
-            Quantity -= quantity;
+            if (Quantity <= 0)
+            {
+                Quantity = Quantity;
+            }
+            else
+            {
+                Quantity -= quantity;
+            }
         }
     }
 }
