@@ -52,9 +52,7 @@
     <Compile Include="Contexts\ProyectContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mapping\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AutoParts.Domain\AutoParts.Domain.csproj">
       <Project>{0f4d79c6-6ada-4cd0-a7e2-6584a0a14794}</Project>
