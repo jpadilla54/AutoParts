@@ -13,8 +13,7 @@ namespace AutoParts.Infrastructure.Contexts
         public ProyectContext() : base("AutoParts")
         {
         }
-
-
+        
         public DbSet<Product> products { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
