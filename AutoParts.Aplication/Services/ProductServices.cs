@@ -19,7 +19,9 @@ namespace AutoParts.Aplication.Services
 
         public void CreateProduct(ProductDto productDto)
         {
-            _products.Add(new Product(productDto.Id, productDto.Name, productDto.Cost, productDto.Price));
+            Product product = new Product(productDto.Id, productDto.Name, productDto.Cost, productDto.Price);
+            product.AddToInventory(productDto.Quantity);
+            _products.Add(product);
             _products.Save();
         }
 

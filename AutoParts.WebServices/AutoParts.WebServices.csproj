@@ -238,7 +238,7 @@
       <Name>AutoParts.Aplication</Name>
     </ProjectReference>
     <ProjectReference Include="..\AutoParts.Domain\AutoParts.Domain.csproj">
-      <Project>{0F4D79C6-6ADA-4CD0-A7E2-6584A0A14794}</Project>
+      <Project>{0f4d79c6-6ada-4cd0-a7e2-6584a0a14794}</Project>
       <Name>AutoParts.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\AutoParts.Infrastructure\AutoParts.Infrastructure.csproj">
