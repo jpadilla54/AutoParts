@@ -39,6 +39,7 @@ namespace AutoParts.Test
             Assert.AreEqual(4, product.Quantity);
         }
         [TestMethod]
+
         public void ShouldNotRemoveProductFromInventoryWhenInventoryIs0()
         {
             Product product = new Product(1, "Tornillo", 0.5, 1.5);
