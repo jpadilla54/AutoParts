@@ -33,7 +33,7 @@ namespace AutoParts.Domain.Entities
         {
             if (Quantity <= 0)
             {
-                Quantity = Quantity;
+                Quantity = quantity;
             }
             else
             {
